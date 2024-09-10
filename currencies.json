@@ -1,0 +1,102 @@
+[
+    {
+        "Code": "USD",
+        "FullName": "United States Dollar",
+        "Sign": "$"
+    },
+    {
+        "Code": "EUR",
+        "FullName": "Euro",
+        "Sign": "€"
+    },
+    {
+        "Code": "JPY",
+        "FullName": "Japanese Yen",
+        "Sign": "¥"
+    },
+    {
+        "Code": "GBP",
+        "FullName": "British Pound Sterling",
+        "Sign": "£"
+    },
+    {
+        "Code": "AUD",
+        "FullName": "Australian Dollar",
+        "Sign": "A$"
+    },
+    {
+        "Code": "CAD",
+        "FullName": "Canadian Dollar",
+        "Sign": "C$"
+    },
+    {
+        "Code": "CHF",
+        "FullName": "Swiss Franc",
+        "Sign": "CHF"
+    },
+    {
+        "Code": "CNY",
+        "FullName": "Chinese Yuan Renminbi",
+        "Sign": "¥"
+    },
+    {
+        "Code": "SEK",
+        "FullName": "Swedish Krona",
+        "Sign": "kr"
+    },
+    {
+        "Code": "NZD",
+        "FullName": "New Zealand Dollar",
+        "Sign": "NZ$"
+    },
+    {
+        "Code": "MXN",
+        "FullName": "Mexican Peso",
+        "Sign": "$"
+    },
+    {
+        "Code": "SGD",
+        "FullName": "Singapore Dollar",
+        "Sign": "S$"
+    },
+    {
+        "Code": "HKD",
+        "FullName": "Hong Kong Dollar",
+        "Sign": "HK$"
+    },
+    {
+        "Code": "NOK",
+        "FullName": "Norwegian Krone",
+        "Sign": "kr"
+    },
+    {
+        "Code": "KRW",
+        "FullName": "South Korean Won",
+        "Sign": "₩"
+    },
+    {
+        "Code": "INR",
+        "FullName": "Indian Rupee",
+        "Sign": "₹"
+    },
+    {
+        "Code": "BRL",
+        "FullName": "Brazilian Real",
+        "Sign": "R$"
+    },
+    {
+        "Code": "ZAR",
+        "FullName": "South African Rand",
+        "Sign": "R"
+    },
+    {
+        "Code": "RUB",
+        "FullName": "Russian Ruble",
+        "Sign": "₽"
+    },
+    {
+        "Code": "TRY",
+        "FullName": "Turkish Lira",
+        "Sign": "₺"
+    }
+]

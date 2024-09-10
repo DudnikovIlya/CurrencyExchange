@@ -1,0 +1,1002 @@
+[
+    {
+        "BaseCurrencyId": 7,
+        "TargetCurrencyId": 13,
+        "Rate": 138.0974
+    },
+    {
+        "BaseCurrencyId": 14,
+        "TargetCurrencyId": 9,
+        "Rate": 104.2789
+    },
+    {
+        "BaseCurrencyId": 7,
+        "TargetCurrencyId": 18,
+        "Rate": 126.1788
+    },
+    {
+        "BaseCurrencyId": 9,
+        "TargetCurrencyId": 14,
+        "Rate": 50.6847
+    },
+    {
+        "BaseCurrencyId": 3,
+        "TargetCurrencyId": 9,
+        "Rate": 47.3997
+    },
+    {
+        "BaseCurrencyId": 6,
+        "TargetCurrencyId": 19,
+        "Rate": 65.3959
+    },
+    {
+        "BaseCurrencyId": 17,
+        "TargetCurrencyId": 15,
+        "Rate": 126.5543
+    },
+    {
+        "BaseCurrencyId": 5,
+        "TargetCurrencyId": 18,
+        "Rate": 1.8659
+    },
+    {
+        "BaseCurrencyId": 17,
+        "TargetCurrencyId": 9,
+        "Rate": 121.5853
+    },
+    {
+        "BaseCurrencyId": 15,
+        "TargetCurrencyId": 9,
+        "Rate": 7.172
+    },
+    {
+        "BaseCurrencyId": 20,
+        "TargetCurrencyId": 15,
+        "Rate": 99.6589
+    },
+    {
+        "BaseCurrencyId": 6,
+        "TargetCurrencyId": 20,
+        "Rate": 108.0079
+    },
+    {
+        "BaseCurrencyId": 2,
+        "TargetCurrencyId": 14,
+        "Rate": 122.4646
+    },
+    {
+        "BaseCurrencyId": 7,
+        "TargetCurrencyId": 3,
+        "Rate": 57.7177
+    },
+    {
+        "BaseCurrencyId": 12,
+        "TargetCurrencyId": 10,
+        "Rate": 118.4886
+    },
+    {
+        "BaseCurrencyId": 4,
+        "TargetCurrencyId": 15,
+        "Rate": 47.5491
+    },
+    {
+        "BaseCurrencyId": 4,
+        "TargetCurrencyId": 2,
+        "Rate": 125.8722
+    },
+    {
+        "BaseCurrencyId": 11,
+        "TargetCurrencyId": 15,
+        "Rate": 30.6448
+    },
+    {
+        "BaseCurrencyId": 18,
+        "TargetCurrencyId": 12,
+        "Rate": 23.5275
+    },
+    {
+        "BaseCurrencyId": 7,
+        "TargetCurrencyId": 19,
+        "Rate": 31.0247
+    },
+    {
+        "BaseCurrencyId": 9,
+        "TargetCurrencyId": 11,
+        "Rate": 35.666
+    },
+    {
+        "BaseCurrencyId": 9,
+        "TargetCurrencyId": 8,
+        "Rate": 128.1226
+    },
+    {
+        "BaseCurrencyId": 17,
+        "TargetCurrencyId": 1,
+        "Rate": 97.4807
+    },
+    {
+        "BaseCurrencyId": 14,
+        "TargetCurrencyId": 17,
+        "Rate": 16.4829
+    },
+    {
+        "BaseCurrencyId": 5,
+        "TargetCurrencyId": 6,
+        "Rate": 102.728
+    },
+    {
+        "BaseCurrencyId": 6,
+        "TargetCurrencyId": 20,
+        "Rate": 139.5599
+    },
+    {
+        "BaseCurrencyId": 12,
+        "TargetCurrencyId": 1,
+        "Rate": 85.7017
+    },
+    {
+        "BaseCurrencyId": 16,
+        "TargetCurrencyId": 9,
+        "Rate": 80.8908
+    },
+    {
+        "BaseCurrencyId": 11,
+        "TargetCurrencyId": 8,
+        "Rate": 130.352
+    },
+    {
+        "BaseCurrencyId": 18,
+        "TargetCurrencyId": 10,
+        "Rate": 125.7939
+    },
+    {
+        "BaseCurrencyId": 15,
+        "TargetCurrencyId": 17,
+        "Rate": 141.7601
+    },
+    {
+        "BaseCurrencyId": 9,
+        "TargetCurrencyId": 17,
+        "Rate": 73.3436
+    },
+    {
+        "BaseCurrencyId": 4,
+        "TargetCurrencyId": 1,
+        "Rate": 139.0291
+    },
+    {
+        "BaseCurrencyId": 12,
+        "TargetCurrencyId": 15,
+        "Rate": 76.4891
+    },
+    {
+        "BaseCurrencyId": 12,
+        "TargetCurrencyId": 8,
+        "Rate": 24.074
+    },
+    {
+        "BaseCurrencyId": 19,
+        "TargetCurrencyId": 12,
+        "Rate": 57.8832
+    },
+    {
+        "BaseCurrencyId": 4,
+        "TargetCurrencyId": 7,
+        "Rate": 70.921
+    },
+    {
+        "BaseCurrencyId": 19,
+        "TargetCurrencyId": 9,
+        "Rate": 91.6274
+    },
+    {
+        "BaseCurrencyId": 4,
+        "TargetCurrencyId": 10,
+        "Rate": 127.8714
+    },
+    {
+        "BaseCurrencyId": 13,
+        "TargetCurrencyId": 6,
+        "Rate": 63.4559
+    },
+    {
+        "BaseCurrencyId": 4,
+        "TargetCurrencyId": 10,
+        "Rate": 91.6258
+    },
+    {
+        "BaseCurrencyId": 4,
+        "TargetCurrencyId": 2,
+        "Rate": 16.868
+    },
+    {
+        "BaseCurrencyId": 20,
+        "TargetCurrencyId": 10,
+        "Rate": 66.1658
+    },
+    {
+        "BaseCurrencyId": 5,
+        "TargetCurrencyId": 14,
+        "Rate": 93.6656
+    },
+    {
+        "BaseCurrencyId": 3,
+        "TargetCurrencyId": 6,
+        "Rate": 123.4156
+    },
+    {
+        "BaseCurrencyId": 10,
+        "TargetCurrencyId": 8,
+        "Rate": 68.6674
+    },
+    {
+        "BaseCurrencyId": 5,
+        "TargetCurrencyId": 15,
+        "Rate": 67.5422
+    },
+    {
+        "BaseCurrencyId": 14,
+        "TargetCurrencyId": 18,
+        "Rate": 91.0831
+    },
+    {
+        "BaseCurrencyId": 10,
+        "TargetCurrencyId": 6,
+        "Rate": 55.1831
+    },
+    {
+        "BaseCurrencyId": 10,
+        "TargetCurrencyId": 2,
+        "Rate": 132.4681
+    },
+    {
+        "BaseCurrencyId": 1,
+        "TargetCurrencyId": 14,
+        "Rate": 40.6976
+    },
+    {
+        "BaseCurrencyId": 12,
+        "TargetCurrencyId": 7,
+        "Rate": 37.3098
+    },
+    {
+        "BaseCurrencyId": 6,
+        "TargetCurrencyId": 11,
+        "Rate": 96.2341
+    },
+    {
+        "BaseCurrencyId": 5,
+        "TargetCurrencyId": 20,
+        "Rate": 129.8233
+    },
+    {
+        "BaseCurrencyId": 9,
+        "TargetCurrencyId": 10,
+        "Rate": 59.544
+    },
+    {
+        "BaseCurrencyId": 19,
+        "TargetCurrencyId": 3,
+        "Rate": 32.9551
+    },
+    {
+        "BaseCurrencyId": 5,
+        "TargetCurrencyId": 9,
+        "Rate": 68.3394
+    },
+    {
+        "BaseCurrencyId": 16,
+        "TargetCurrencyId": 20,
+        "Rate": 82.3593
+    },
+    {
+        "BaseCurrencyId": 16,
+        "TargetCurrencyId": 17,
+        "Rate": 128.2331
+    },
+    {
+        "BaseCurrencyId": 3,
+        "TargetCurrencyId": 18,
+        "Rate": 13.6132
+    },
+    {
+        "BaseCurrencyId": 11,
+        "TargetCurrencyId": 10,
+        "Rate": 66.1488
+    },
+    {
+        "BaseCurrencyId": 5,
+        "TargetCurrencyId": 2,
+        "Rate": 27.1511
+    },
+    {
+        "BaseCurrencyId": 15,
+        "TargetCurrencyId": 12,
+        "Rate": 22.2605
+    },
+    {
+        "BaseCurrencyId": 6,
+        "TargetCurrencyId": 7,
+        "Rate": 33.8473
+    },
+    {
+        "BaseCurrencyId": 17,
+        "TargetCurrencyId": 12,
+        "Rate": 105.5994
+    },
+    {
+        "BaseCurrencyId": 15,
+        "TargetCurrencyId": 16,
+        "Rate": 57.7962
+    },
+    {
+        "BaseCurrencyId": 20,
+        "TargetCurrencyId": 8,
+        "Rate": 119.5117
+    },
+    {
+        "BaseCurrencyId": 5,
+        "TargetCurrencyId": 3,
+        "Rate": 80.5887
+    },
+    {
+        "BaseCurrencyId": 3,
+        "TargetCurrencyId": 20,
+        "Rate": 81.9405
+    },
+    {
+        "BaseCurrencyId": 11,
+        "TargetCurrencyId": 3,
+        "Rate": 94.2418
+    },
+    {
+        "BaseCurrencyId": 12,
+        "TargetCurrencyId": 8,
+        "Rate": 35.2419
+    },
+    {
+        "BaseCurrencyId": 1,
+        "TargetCurrencyId": 8,
+        "Rate": 16.4108
+    },
+    {
+        "BaseCurrencyId": 11,
+        "TargetCurrencyId": 20,
+        "Rate": 0.68
+    },
+    {
+        "BaseCurrencyId": 18,
+        "TargetCurrencyId": 7,
+        "Rate": 70.0696
+    },
+    {
+        "BaseCurrencyId": 15,
+        "TargetCurrencyId": 11,
+        "Rate": 146.323
+    },
+    {
+        "BaseCurrencyId": 1,
+        "TargetCurrencyId": 15,
+        "Rate": 84.9928
+    },
+    {
+        "BaseCurrencyId": 4,
+        "TargetCurrencyId": 5,
+        "Rate": 34.0895
+    },
+    {
+        "BaseCurrencyId": 10,
+        "TargetCurrencyId": 14,
+        "Rate": 137.5171
+    },
+    {
+        "BaseCurrencyId": 12,
+        "TargetCurrencyId": 5,
+        "Rate": 141.2467
+    },
+    {
+        "BaseCurrencyId": 15,
+        "TargetCurrencyId": 13,
+        "Rate": 125.9718
+    },
+    {
+        "BaseCurrencyId": 2,
+        "TargetCurrencyId": 12,
+        "Rate": 126.7024
+    },
+    {
+        "BaseCurrencyId": 10,
+        "TargetCurrencyId": 15,
+        "Rate": 60.4853
+    },
+    {
+        "BaseCurrencyId": 6,
+        "TargetCurrencyId": 2,
+        "Rate": 33.6428
+    },
+    {
+        "BaseCurrencyId": 4,
+        "TargetCurrencyId": 7,
+        "Rate": 43.4071
+    },
+    {
+        "BaseCurrencyId": 14,
+        "TargetCurrencyId": 6,
+        "Rate": 45.9892
+    },
+    {
+        "BaseCurrencyId": 9,
+        "TargetCurrencyId": 15,
+        "Rate": 108.0452
+    },
+    {
+        "BaseCurrencyId": 13,
+        "TargetCurrencyId": 16,
+        "Rate": 70.2459
+    },
+    {
+        "BaseCurrencyId": 11,
+        "TargetCurrencyId": 2,
+        "Rate": 121.4514
+    },
+    {
+        "BaseCurrencyId": 1,
+        "TargetCurrencyId": 20,
+        "Rate": 47.2861
+    },
+    {
+        "BaseCurrencyId": 13,
+        "TargetCurrencyId": 7,
+        "Rate": 35.7581
+    },
+    {
+        "BaseCurrencyId": 6,
+        "TargetCurrencyId": 20,
+        "Rate": 42.118
+    },
+    {
+        "BaseCurrencyId": 6,
+        "TargetCurrencyId": 10,
+        "Rate": 141.8222
+    },
+    {
+        "BaseCurrencyId": 7,
+        "TargetCurrencyId": 19,
+        "Rate": 22.635
+    },
+    {
+        "BaseCurrencyId": 7,
+        "TargetCurrencyId": 13,
+        "Rate": 2.3985
+    },
+    {
+        "BaseCurrencyId": 17,
+        "TargetCurrencyId": 18,
+        "Rate": 71.0983
+    },
+    {
+        "BaseCurrencyId": 15,
+        "TargetCurrencyId": 13,
+        "Rate": 104.0267
+    },
+    {
+        "BaseCurrencyId": 16,
+        "TargetCurrencyId": 19,
+        "Rate": 33.1007
+    },
+    {
+        "BaseCurrencyId": 11,
+        "TargetCurrencyId": 20,
+        "Rate": 143.1278
+    },
+    {
+        "BaseCurrencyId": 7,
+        "TargetCurrencyId": 19,
+        "Rate": 91.4558
+    },
+    {
+        "BaseCurrencyId": 12,
+        "TargetCurrencyId": 3,
+        "Rate": 120.6732
+    },
+    {
+        "BaseCurrencyId": 20,
+        "TargetCurrencyId": 1,
+        "Rate": 65.3883
+    },
+    {
+        "BaseCurrencyId": 4,
+        "TargetCurrencyId": 1,
+        "Rate": 11.9286
+    },
+    {
+        "BaseCurrencyId": 2,
+        "TargetCurrencyId": 11,
+        "Rate": 132.0743
+    },
+    {
+        "BaseCurrencyId": 4,
+        "TargetCurrencyId": 8,
+        "Rate": 110.6538
+    },
+    {
+        "BaseCurrencyId": 8,
+        "TargetCurrencyId": 9,
+        "Rate": 87.0601
+    },
+    {
+        "BaseCurrencyId": 15,
+        "TargetCurrencyId": 4,
+        "Rate": 41.7013
+    },
+    {
+        "BaseCurrencyId": 5,
+        "TargetCurrencyId": 20,
+        "Rate": 30.6919
+    },
+    {
+        "BaseCurrencyId": 5,
+        "TargetCurrencyId": 20,
+        "Rate": 64.1254
+    },
+    {
+        "BaseCurrencyId": 11,
+        "TargetCurrencyId": 18,
+        "Rate": 34.7954
+    },
+    {
+        "BaseCurrencyId": 1,
+        "TargetCurrencyId": 8,
+        "Rate": 75.1764
+    },
+    {
+        "BaseCurrencyId": 10,
+        "TargetCurrencyId": 18,
+        "Rate": 43.8332
+    },
+    {
+        "BaseCurrencyId": 6,
+        "TargetCurrencyId": 11,
+        "Rate": 46.0529
+    },
+    {
+        "BaseCurrencyId": 11,
+        "TargetCurrencyId": 6,
+        "Rate": 97.0861
+    },
+    {
+        "BaseCurrencyId": 2,
+        "TargetCurrencyId": 20,
+        "Rate": 67.1252
+    },
+    {
+        "BaseCurrencyId": 15,
+        "TargetCurrencyId": 13,
+        "Rate": 117.8031
+    },
+    {
+        "BaseCurrencyId": 20,
+        "TargetCurrencyId": 10,
+        "Rate": 64.8643
+    },
+    {
+        "BaseCurrencyId": 7,
+        "TargetCurrencyId": 2,
+        "Rate": 49.4281
+    },
+    {
+        "BaseCurrencyId": 20,
+        "TargetCurrencyId": 14,
+        "Rate": 34.3153
+    },
+    {
+        "BaseCurrencyId": 5,
+        "TargetCurrencyId": 1,
+        "Rate": 57.9129
+    },
+    {
+        "BaseCurrencyId": 12,
+        "TargetCurrencyId": 5,
+        "Rate": 97.2548
+    },
+    {
+        "BaseCurrencyId": 8,
+        "TargetCurrencyId": 10,
+        "Rate": 50.0427
+    },
+    {
+        "BaseCurrencyId": 7,
+        "TargetCurrencyId": 11,
+        "Rate": 105.7461
+    },
+    {
+        "BaseCurrencyId": 6,
+        "TargetCurrencyId": 15,
+        "Rate": 20.2133
+    },
+    {
+        "BaseCurrencyId": 14,
+        "TargetCurrencyId": 6,
+        "Rate": 140.7861
+    },
+    {
+        "BaseCurrencyId": 15,
+        "TargetCurrencyId": 8,
+        "Rate": 53.1024
+    },
+    {
+        "BaseCurrencyId": 10,
+        "TargetCurrencyId": 18,
+        "Rate": 50.9052
+    },
+    {
+        "BaseCurrencyId": 20,
+        "TargetCurrencyId": 11,
+        "Rate": 109.3983
+    },
+    {
+        "BaseCurrencyId": 20,
+        "TargetCurrencyId": 8,
+        "Rate": 81.3196
+    },
+    {
+        "BaseCurrencyId": 13,
+        "TargetCurrencyId": 5,
+        "Rate": 117.1938
+    },
+    {
+        "BaseCurrencyId": 10,
+        "TargetCurrencyId": 5,
+        "Rate": 131.8523
+    },
+    {
+        "BaseCurrencyId": 15,
+        "TargetCurrencyId": 17,
+        "Rate": 4.7417
+    },
+    {
+        "BaseCurrencyId": 17,
+        "TargetCurrencyId": 7,
+        "Rate": 121.1649
+    },
+    {
+        "BaseCurrencyId": 11,
+        "TargetCurrencyId": 6,
+        "Rate": 19.8683
+    },
+    {
+        "BaseCurrencyId": 15,
+        "TargetCurrencyId": 10,
+        "Rate": 134.871
+    },
+    {
+        "BaseCurrencyId": 1,
+        "TargetCurrencyId": 19,
+        "Rate": 87.3835
+    },
+    {
+        "BaseCurrencyId": 4,
+        "TargetCurrencyId": 3,
+        "Rate": 102.2279
+    },
+    {
+        "BaseCurrencyId": 14,
+        "TargetCurrencyId": 20,
+        "Rate": 80.701
+    },
+    {
+        "BaseCurrencyId": 17,
+        "TargetCurrencyId": 1,
+        "Rate": 81.4079
+    },
+    {
+        "BaseCurrencyId": 12,
+        "TargetCurrencyId": 8,
+        "Rate": 115.7262
+    },
+    {
+        "BaseCurrencyId": 14,
+        "TargetCurrencyId": 5,
+        "Rate": 148.7363
+    },
+    {
+        "BaseCurrencyId": 9,
+        "TargetCurrencyId": 10,
+        "Rate": 126.2802
+    },
+    {
+        "BaseCurrencyId": 1,
+        "TargetCurrencyId": 18,
+        "Rate": 119.5874
+    },
+    {
+        "BaseCurrencyId": 3,
+        "TargetCurrencyId": 13,
+        "Rate": 114.4595
+    },
+    {
+        "BaseCurrencyId": 14,
+        "TargetCurrencyId": 8,
+        "Rate": 59.9799
+    },
+    {
+        "BaseCurrencyId": 6,
+        "TargetCurrencyId": 11,
+        "Rate": 56.4056
+    },
+    {
+        "BaseCurrencyId": 5,
+        "TargetCurrencyId": 7,
+        "Rate": 55.185
+    },
+    {
+        "BaseCurrencyId": 13,
+        "TargetCurrencyId": 4,
+        "Rate": 41.1897
+    },
+    {
+        "BaseCurrencyId": 17,
+        "TargetCurrencyId": 12,
+        "Rate": 63.577
+    },
+    {
+        "BaseCurrencyId": 12,
+        "TargetCurrencyId": 3,
+        "Rate": 65.6436
+    },
+    {
+        "BaseCurrencyId": 2,
+        "TargetCurrencyId": 10,
+        "Rate": 34.0942
+    },
+    {
+        "BaseCurrencyId": 7,
+        "TargetCurrencyId": 18,
+        "Rate": 121.8821
+    },
+    {
+        "BaseCurrencyId": 12,
+        "TargetCurrencyId": 10,
+        "Rate": 48.8544
+    },
+    {
+        "BaseCurrencyId": 16,
+        "TargetCurrencyId": 8,
+        "Rate": 134.7633
+    },
+    {
+        "BaseCurrencyId": 9,
+        "TargetCurrencyId": 11,
+        "Rate": 104.144
+    },
+    {
+        "BaseCurrencyId": 12,
+        "TargetCurrencyId": 11,
+        "Rate": 79.7768
+    },
+    {
+        "BaseCurrencyId": 17,
+        "TargetCurrencyId": 8,
+        "Rate": 64.8858
+    },
+    {
+        "BaseCurrencyId": 3,
+        "TargetCurrencyId": 12,
+        "Rate": 26.5594
+    },
+    {
+        "BaseCurrencyId": 14,
+        "TargetCurrencyId": 5,
+        "Rate": 101.3446
+    },
+    {
+        "BaseCurrencyId": 11,
+        "TargetCurrencyId": 12,
+        "Rate": 144.89
+    },
+    {
+        "BaseCurrencyId": 18,
+        "TargetCurrencyId": 17,
+        "Rate": 133.9145
+    },
+    {
+        "BaseCurrencyId": 9,
+        "TargetCurrencyId": 3,
+        "Rate": 133.3821
+    },
+    {
+        "BaseCurrencyId": 17,
+        "TargetCurrencyId": 15,
+        "Rate": 130.7372
+    },
+    {
+        "BaseCurrencyId": 7,
+        "TargetCurrencyId": 11,
+        "Rate": 2.537
+    },
+    {
+        "BaseCurrencyId": 3,
+        "TargetCurrencyId": 16,
+        "Rate": 50.4735
+    },
+    {
+        "BaseCurrencyId": 20,
+        "TargetCurrencyId": 18,
+        "Rate": 64.4908
+    },
+    {
+        "BaseCurrencyId": 8,
+        "TargetCurrencyId": 12,
+        "Rate": 78.7686
+    },
+    {
+        "BaseCurrencyId": 6,
+        "TargetCurrencyId": 12,
+        "Rate": 83.0588
+    },
+    {
+        "BaseCurrencyId": 12,
+        "TargetCurrencyId": 3,
+        "Rate": 27.0738
+    },
+    {
+        "BaseCurrencyId": 5,
+        "TargetCurrencyId": 16,
+        "Rate": 116.5444
+    },
+    {
+        "BaseCurrencyId": 11,
+        "TargetCurrencyId": 17,
+        "Rate": 119.3718
+    },
+    {
+        "BaseCurrencyId": 2,
+        "TargetCurrencyId": 1,
+        "Rate": 53.1724
+    },
+    {
+        "BaseCurrencyId": 12,
+        "TargetCurrencyId": 20,
+        "Rate": 103.1846
+    },
+    {
+        "BaseCurrencyId": 2,
+        "TargetCurrencyId": 15,
+        "Rate": 63.4672
+    },
+    {
+        "BaseCurrencyId": 12,
+        "TargetCurrencyId": 17,
+        "Rate": 63.9135
+    },
+    {
+        "BaseCurrencyId": 19,
+        "TargetCurrencyId": 20,
+        "Rate": 26.6655
+    },
+    {
+        "BaseCurrencyId": 10,
+        "TargetCurrencyId": 18,
+        "Rate": 94.4782
+    },
+    {
+        "BaseCurrencyId": 3,
+        "TargetCurrencyId": 7,
+        "Rate": 30.7729
+    },
+    {
+        "BaseCurrencyId": 10,
+        "TargetCurrencyId": 7,
+        "Rate": 92.4304
+    },
+    {
+        "BaseCurrencyId": 18,
+        "TargetCurrencyId": 14,
+        "Rate": 9.5228
+    },
+    {
+        "BaseCurrencyId": 6,
+        "TargetCurrencyId": 2,
+        "Rate": 108.5788
+    },
+    {
+        "BaseCurrencyId": 9,
+        "TargetCurrencyId": 17,
+        "Rate": 84.2219
+    },
+    {
+        "BaseCurrencyId": 6,
+        "TargetCurrencyId": 15,
+        "Rate": 49.5282
+    },
+    {
+        "BaseCurrencyId": 9,
+        "TargetCurrencyId": 19,
+        "Rate": 34.1966
+    },
+    {
+        "BaseCurrencyId": 10,
+        "TargetCurrencyId": 11,
+        "Rate": 71.9085
+    },
+    {
+        "BaseCurrencyId": 16,
+        "TargetCurrencyId": 3,
+        "Rate": 57.4151
+    },
+    {
+        "BaseCurrencyId": 5,
+        "TargetCurrencyId": 11,
+        "Rate": 35.5633
+    },
+    {
+        "BaseCurrencyId": 9,
+        "TargetCurrencyId": 2,
+        "Rate": 129.2223
+    },
+    {
+        "BaseCurrencyId": 10,
+        "TargetCurrencyId": 12,
+        "Rate": 68.8369
+    },
+    {
+        "BaseCurrencyId": 2,
+        "TargetCurrencyId": 13,
+        "Rate": 113.4744
+    },
+    {
+        "BaseCurrencyId": 4,
+        "TargetCurrencyId": 15,
+        "Rate": 89.6861
+    },
+    {
+        "BaseCurrencyId": 14,
+        "TargetCurrencyId": 1,
+        "Rate": 79.034
+    },
+    {
+        "BaseCurrencyId": 8,
+        "TargetCurrencyId": 5,
+        "Rate": 76.7423
+    },
+    {
+        "BaseCurrencyId": 19,
+        "TargetCurrencyId": 11,
+        "Rate": 138.2555
+    },
+    {
+        "BaseCurrencyId": 1,
+        "TargetCurrencyId": 8,
+        "Rate": 82.4131
+    },
+    {
+        "BaseCurrencyId": 10,
+        "TargetCurrencyId": 1,
+        "Rate": 47.1906
+    },
+    {
+        "BaseCurrencyId": 17,
+        "TargetCurrencyId": 3,
+        "Rate": 63.0801
+    },
+    {
+        "BaseCurrencyId": 2,
+        "TargetCurrencyId": 11,
+        "Rate": 13.4348
+    },
+    {
+        "BaseCurrencyId": 6,
+        "TargetCurrencyId": 18,
+        "Rate": 112.0783
+    },
+    {
+        "BaseCurrencyId": 2,
+        "TargetCurrencyId": 14,
+        "Rate": 73.1421
+    },
+    {
+        "BaseCurrencyId": 11,
+        "TargetCurrencyId": 5,
+        "Rate": 102.8924
+    }
+]
