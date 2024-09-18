@@ -54,7 +54,7 @@ public class DataLoader {
                 currencyStmt.setString(1, (String) currency.get("Code"));
                 currencyStmt.setString(2, (String) currency.get("FullName"));
                 currencyStmt.setString(3, (String) currency.get("Sign"));
-                currencyStmt.addBatch();;
+                currencyStmt.addBatch();
             }
             currencyStmt.executeBatch();
 
