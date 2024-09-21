@@ -1,49 +1,93 @@
 package com.ilyaDudnikov.CurrencyExchange.dao;
 
-import com.ilyaDudnikov.CurrencyExchange.dto.CurrencyDto;
+import com.ilyaDudnikov.CurrencyExchange.exeptions.CurrencyException;
+import com.ilyaDudnikov.CurrencyExchange.exeptions.DatabaseException;
+import com.ilyaDudnikov.CurrencyExchange.models.Currency;
 
-import java.io.File;
 import java.sql.*;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Optional;
 
 public class CurrencyDao {
-    public List<CurrencyDto> getAllCurrencies() {
+    public List<Currency> getAll() {
         String sql = SqlQueries.SELECT_ALL_CURRENCIES;
-//        try (Connection conn = HikariCPDataSource.getConnection();
-        try {
-            Class.forName("org.sqlite.JDBC");
-            String dbPath = "D:/Idea Projects/CurrencyExchange/src/main/resources/database.db";  // Укажи полный путь
-            String url = "jdbc:sqlite:" + dbPath;
-            Connection conn = DriverManager.getConnection(url);
-            Statement stmt = conn.createStatement();
-            stmt.execute("SELECT 1");
-            ResultSet rs = stmt.executeQuery("SELECT * FROM Currencies");
+        try (Connection conn = HikariCPDataSource.getConnection();
+             Statement stmt = conn.createStatement();
+             ResultSet rs = stmt.executeQuery(sql)) {
+
             // Преобразование результата в список
-            return convertResultSetToListDto(rs);
+            return convertResultSetToListModel(rs);
             
         } catch (SQLException e) {
-            throw new RuntimeException(e);
-        } catch (ClassNotFoundException e) {
-            throw new RuntimeException(e);
+            throw new DatabaseException(e);
         }
     }
 
-    private List<CurrencyDto> convertResultSetToListDto(ResultSet rs) throws SQLException {
-        List<CurrencyDto> result = new LinkedList<>();
+    private List<Currency> convertResultSetToListModel(ResultSet rs) throws SQLException {
+        List<Currency> result = new LinkedList<>();
         while (rs.next()) {
-            CurrencyDto currencyDto = convertResultToDto(rs);
-            result.add(currencyDto);
+            Currency currency = convertResultToModel(rs);
+            result.add(currency);
         }
         return result;
     }
 
-    private CurrencyDto convertResultToDto(ResultSet rs) throws SQLException {
-        return CurrencyDto.builder()
+    private Currency convertResultToModel(ResultSet rs) throws SQLException {
+        return Currency.builder()
                 .id(rs.getLong("ID"))
                 .code(rs.getString("Code"))
                 .fullName(rs.getString("FullName"))
                 .sign(rs.getString("Sign"))
                 .build();
+    }
+
+    public Optional<Currency> getByCode(String code) {
+        String sql = SqlQueries.SELECT_BY_CODE;
+        try (Connection conn = HikariCPDataSource.getConnection();
+             PreparedStatement ps = conn.prepareStatement(sql)) {
+            ps.setString(1, code);
+            ResultSet rs = ps.executeQuery();
+
+            Currency currency = null;
+            if (rs.next())
+                currency = Currency.builder()
+                        .id(rs.getLong("ID"))
+                        .code(rs.getString("Code"))
+                        .fullName(rs.getString("FullName"))
+                        .sign(rs.getString("Sign"))
+                        .build();
+            rs.close();
+
+            return Optional.ofNullable(currency);
+        } catch (SQLException e) {
+            throw new DatabaseException(e);
+        }
+    }
+
+    public Currency save(Currency currency) {
+        String sql = SqlQueries.INSERT_CURRENCY;
+        try (Connection conn = HikariCPDataSource.getConnection();
+        PreparedStatement ps = conn.prepareStatement(sql)) {
+            ps.setString(1, currency.getCode());
+            ps.setString(2, currency.getFullName());
+            ps.setString(3, currency.getSign());
+            ps.executeUpdate();
+
+            try (ResultSet generatedKeys = ps.getGeneratedKeys()) {
+                if (generatedKeys.next()) {
+                    currency.setId(generatedKeys.getLong(1));
+                    return currency;
+                } else {
+                    throw new SQLException("Creating currency failed, no ID obtained.");
+                }
+            }
+        } catch (SQLException e) {
+            if (e.getMessage().contains("UNIQUE")) {
+                throw new CurrencyException(e);
+            } else {
+                throw new DatabaseException(e);
+            }
+        }
     }
 }

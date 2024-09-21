@@ -5,11 +5,10 @@ import com.zaxxer.hikari.HikariDataSource;
 
 import java.sql.Connection;
 import java.sql.SQLException;
-import java.util.Objects;
 
 public class HikariCPDataSource {
 
-    private static final String jdbcUrl = "jdbc:sqlite:resources:database.db";
+    private static final String jdbcUrl = "jdbc:sqlite::resource:database.db";
     private static final int maxPoolSize = 10;
 
     private static final HikariDataSource dataSource;
