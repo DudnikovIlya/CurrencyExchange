@@ -7,6 +7,7 @@ import com.ilyaDudnikov.CurrencyExchange.models.ExchangeRate;
 import java.sql.*;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Optional;
 
 public class ExchangeRateDao {
     public List<ExchangeRate> getAll() {
@@ -18,6 +19,27 @@ public class ExchangeRateDao {
             // Преобразование результата в список
             return convertResultSetToListModel(rs);
 
+        } catch (SQLException e) {
+            throw new DatabaseException(e);
+        }
+    }
+
+    public Optional<ExchangeRate> getByCodes(String baseCode, String targetCode) {
+        String sql = SqlQueries.SELECT_EXCHANGE_RATE_BY_CODES;
+        try (Connection conn = HikariCPDataSource.getConnection();
+        PreparedStatement ps = conn.prepareStatement(sql)) {
+
+            ps.setString(1, baseCode);
+            ps.setString(2, targetCode);
+
+            ResultSet rs = ps.executeQuery();
+            ExchangeRate exchangeRate = null;
+            if (rs.next()) {
+                exchangeRate = convertResultToModel(rs);
+            }
+            rs.close();
+
+            return Optional.ofNullable(exchangeRate);
         } catch (SQLException e) {
             throw new DatabaseException(e);
         }

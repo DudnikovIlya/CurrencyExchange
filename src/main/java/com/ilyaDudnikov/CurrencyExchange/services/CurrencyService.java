@@ -27,12 +27,7 @@ public class CurrencyService {
     public CurrencyDto getByCode(String code) {
         Optional<Currency> currency = currencyDao.getByCode(code);
         if (currency.isPresent()) {
-            return CurrencyDto.builder()
-                    .id(currency.get().getId())
-                    .code(currency.get().getCode())
-                    .fullName(currency.get().getFullName())
-                    .sign(currency.get().getSign())
-                    .build();
+            return CurrencyConverter.convertToDto(currency.get());
         } else {
             throw new CurrencyException("Currency with this code not found: " + code);
         }

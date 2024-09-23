@@ -12,4 +12,13 @@ public class SqlQueries {
             "FROM ExchangeRates er " +
             "JOIN Currencies base ON er.BaseCurrencyId = base.ID " +
             "JOIN Currencies target ON er.TargetCurrencyId = target.ID";
+
+    public static final String SELECT_EXCHANGE_RATE_BY_CODES = "SELECT er.ID, " +
+            "base.ID BaseId, base.Code BaseCode, base.FullName BaseFullName, base.Sign BaseSign, " +
+            "target.ID TargetId, target.Code TargetCode, target.FullName TargetFullName, target.Sign TargetSign, " +
+            "er.Rate " +
+            "FROM ExchangeRates er " +
+            "JOIN Currencies base ON er.BaseCurrencyId = base.ID " +
+            "JOIN Currencies target ON er.TargetCurrencyId = target.ID " +
+            "WHERE base.Code = ? AND target.Code = ?";
 }
