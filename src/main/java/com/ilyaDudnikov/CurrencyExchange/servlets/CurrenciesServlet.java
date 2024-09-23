@@ -38,7 +38,7 @@ public class CurrenciesServlet extends HttpServlet {
         try {
             CurrencyDto currencyDto = getCurrencyDto(req);
             CurrencyDto createdCurrency = service.create(currencyDto);
-            writer.writeToResponse(resp, createdCurrency, HttpServletResponse.SC_OK);
+            writer.writeToResponse(resp, createdCurrency, HttpServletResponse.SC_CREATED);
         } catch (IllegalArgumentException e) {
             resp.sendError(HttpServletResponse.SC_BAD_REQUEST, e.getMessage());
         } catch (CurrencyException e) {

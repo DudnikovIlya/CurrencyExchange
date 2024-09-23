@@ -32,4 +32,14 @@ public class ExchangeRateService {
                     "{baseCode: " + baseCode + "}, {targetCode: " + targetCode + "}");
         }
     }
+
+    public ExchangeRateDto create(ExchangeRateDto exchangeRateDto) {
+        ExchangeRate exchangeRate = ExchangeRateConverter.convertToEntity(exchangeRateDto);
+        exchangeRateDao.save(exchangeRate);
+        Optional<ExchangeRate> createdExchangeRate = exchangeRateDao.getByCodes(
+                exchangeRateDto.getBaseCurrency().getCode(),
+                exchangeRateDto.getTargetCurrency().getCode());
+        return ExchangeRateConverter.convertToDto(createdExchangeRate.orElse(new ExchangeRate()));
+
+    }
 }

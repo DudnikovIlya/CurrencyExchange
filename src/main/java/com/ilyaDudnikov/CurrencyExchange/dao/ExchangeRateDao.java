@@ -1,6 +1,8 @@
 package com.ilyaDudnikov.CurrencyExchange.dao;
 
+import com.ilyaDudnikov.CurrencyExchange.exeptions.CurrencyException;
 import com.ilyaDudnikov.CurrencyExchange.exeptions.DatabaseException;
+import com.ilyaDudnikov.CurrencyExchange.exeptions.ExchangeRateException;
 import com.ilyaDudnikov.CurrencyExchange.models.Currency;
 import com.ilyaDudnikov.CurrencyExchange.models.ExchangeRate;
 
@@ -42,6 +44,27 @@ public class ExchangeRateDao {
             return Optional.ofNullable(exchangeRate);
         } catch (SQLException e) {
             throw new DatabaseException(e);
+        }
+    }
+
+    public void save(ExchangeRate exchangeRate) {
+        String sql = SqlQueries.INSERT_EXCHANGE_RATE;
+        try (Connection conn = HikariCPDataSource.getConnection();
+        PreparedStatement ps = conn.prepareStatement(sql)) {
+
+            ps.setString(1, exchangeRate.getBaseCurrency().getCode());
+            ps.setString(2, exchangeRate.getTargetCurrency().getCode());
+            ps.setBigDecimal(3, exchangeRate.getRate());
+            ps.executeUpdate();
+
+        } catch (SQLException e) {
+            if (e.getMessage().contains("SQLITE_CONSTRAINT_UNIQUE")) {
+                throw new ExchangeRateException("Exchange rate with such a pair already exists");
+            } else if (e.getMessage().contains("SQLITE_CONSTRAINT_TRIGGER")) {
+                throw new CurrencyException("One (or both) currencies from the currency pair do not exist in the database");
+            } else {
+                throw new DatabaseException(e);
+            }
         }
     }
 

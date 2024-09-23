@@ -1,5 +1,6 @@
 package com.ilyaDudnikov.CurrencyExchange.servlets;
 
+import java.math.BigDecimal;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -31,5 +32,17 @@ public class CurrencyValidator {
         Matcher matcher = pattern.matcher(value);
         // Проверяем, соответствует ли строка регулярному выражению
         return matcher.matches();
+    }
+
+    public static boolean isValidBigDecimal(String value) {
+        if (value == null)
+            return false;
+
+        try {
+            new BigDecimal(value);
+            return true;
+        } catch (NumberFormatException e) {
+            return false; // строка не может быть преобразована в BigDecimal
+        }
     }
 }

@@ -21,4 +21,10 @@ public class SqlQueries {
             "JOIN Currencies base ON er.BaseCurrencyId = base.ID " +
             "JOIN Currencies target ON er.TargetCurrencyId = target.ID " +
             "WHERE base.Code = ? AND target.Code = ?";
+
+    public static final String INSERT_EXCHANGE_RATE = "INSERT OR ABORT INTO ExchangeRates " +
+            "(BaseCurrencyId, TargetCurrencyId, Rate) values " +
+            "((SELECT ID FROM Currencies WHERE Code = ?), " +
+            "(SELECT id FROM Currencies WHERE Code = ?), " +
+            "?)";
 }
