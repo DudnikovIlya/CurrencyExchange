@@ -24,12 +24,12 @@ public class CurrenciesServlet extends HttpServlet {
     }
 
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         try {
             List<CurrencyDto> currencies = service.getAll();
             writer.writeToResponse(resp, currencies, HttpServletResponse.SC_OK);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+        } catch (DatabaseException e) {
+            resp.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, e.getMessage());
         }
     }
 
