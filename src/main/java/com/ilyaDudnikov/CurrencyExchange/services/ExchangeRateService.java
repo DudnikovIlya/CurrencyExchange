@@ -42,4 +42,13 @@ public class ExchangeRateService {
         return ExchangeRateConverter.convertToDto(createdExchangeRate.orElse(new ExchangeRate()));
 
     }
+
+    public ExchangeRateDto update(ExchangeRateDto exchangeRateDto) {
+        ExchangeRate exchangeRate = ExchangeRateConverter.convertToEntity(exchangeRateDto);
+        exchangeRateDao.update(exchangeRate);
+
+        String baseCode = exchangeRateDto.getBaseCurrency().getCode();
+        String targetCode = exchangeRateDto.getTargetCurrency().getCode();
+        return getByCodes(baseCode, targetCode);
+    }
 }

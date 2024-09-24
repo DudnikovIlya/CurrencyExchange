@@ -27,4 +27,8 @@ public class SqlQueries {
             "((SELECT ID FROM Currencies WHERE Code = ?), " +
             "(SELECT id FROM Currencies WHERE Code = ?), " +
             "?)";
+
+    public static final String UPDATE_EXCHANGE_RATE = "UPDATE OR ABORT ExchangeRates SET Rate = ? " +
+            "WHERE BaseCurrencyId = (SELECT ID FROM Currencies WHERE Code = ?) AND " +
+            "TargetCurrencyId = (SELECT ID FROM Currencies WHERE Code = ?)";
 }

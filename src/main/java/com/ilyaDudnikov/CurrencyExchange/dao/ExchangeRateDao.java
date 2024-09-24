@@ -68,6 +68,51 @@ public class ExchangeRateDao {
         }
     }
 
+    public void update(ExchangeRate exchangeRate) {
+        Connection conn = null;
+        try {
+            conn = HikariCPDataSource.getConnection();
+            conn.setAutoCommit(false);
+            conn.setTransactionIsolation(Connection.TRANSACTION_REPEATABLE_READ);
+
+            if (updateRecord(conn, exchangeRate) != 0) {
+                conn.commit();
+            } else {
+                conn.rollback();
+                throw new ExchangeRateException("The currency pair is missing in the database: " +
+                        "{baseCode: " + exchangeRate.getBaseCurrency().getCode() + "}, " +
+                        "{targetCode: " + exchangeRate.getTargetCurrency().getCode() + "}");
+            }
+        } catch (SQLException e) {
+            if (conn != null) {
+                try {
+                    conn.rollback();  // Откат транзакции в случае ошибки
+                } catch (SQLException rollbackEx) {
+                    throw new DatabaseException("Failed to rollback transaction");
+                }
+            }
+            throw new DatabaseException(e);
+        } finally {
+            if (conn != null) {
+                try {
+                    conn.close();  // Закрываем соединение в любом случае
+                } catch (SQLException closeEx) {
+                    throw new DatabaseException("Failed to close connection");
+                }
+            }
+        }
+    }
+
+    private int updateRecord(Connection conn, ExchangeRate exchangeRate) throws SQLException {
+        String sql = SqlQueries.UPDATE_EXCHANGE_RATE;
+        try (PreparedStatement ps = conn.prepareStatement(sql)) {
+            ps.setBigDecimal(1, exchangeRate.getRate());
+            ps.setString(2, exchangeRate.getBaseCurrency().getCode());
+            ps.setString(3, exchangeRate.getTargetCurrency().getCode());
+            return ps.executeUpdate();
+        }
+    }
+
     private List<ExchangeRate> convertResultSetToListModel(ResultSet rs) throws SQLException {
         List<ExchangeRate> result = new LinkedList<>();
         while (rs.next()) {
