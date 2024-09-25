@@ -17,10 +17,11 @@ import java.math.BigDecimal;
 public class ExchangeServlet extends HttpServlet {
     private ExchangeService service;
     private JsonWriter writer;
+
     @Override
     public void init() {
         service = new ExchangeService();
-        writer= new JsonWriter();
+        writer = new JsonWriter();
     }
 
     @Override
@@ -43,7 +44,7 @@ public class ExchangeServlet extends HttpServlet {
         String targetCode = req.getParameter("to");
         String amountString = req.getParameter("amount");
 
-        if(CurrencyValidator.isValidCurrencyCode(baseCode) &&
+        if (CurrencyValidator.isValidCurrencyCode(baseCode) &&
                 CurrencyValidator.isValidCurrencyCode(targetCode) &&
                 CurrencyValidator.isValidBigDecimal(amountString)) {
 
@@ -62,6 +63,5 @@ public class ExchangeServlet extends HttpServlet {
                     "{targetCode: " + targetCode + "}, " +
                     "{amount: " + amountString + "}");
         }
-        
     }
 }
